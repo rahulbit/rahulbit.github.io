@@ -1,0 +1,35 @@
+ <div class="row">
+            <div class="col-lg-12">
+                <div class="post-preview" ng-repeat="x in mydata " style="text-align: center;">
+                   
+                        <h2 class="post-title">
+                            {{x.name |uppercase}} 
+                             
+                        </h2>
+                        <h3 class="post-subtitle">
+                            <p> <h5> Total Match played: {{x.stat.totalmatch|lowercase}}</h5></p>
+                           <p> <h5> Matches Won: {{x.stat.won}}</h5></p>
+                            <p><h5> Matches lost:{{x.stat.lost}}</h5></p>
+                           <p><h5> Total Goals: {{x.stat.goals}}</h5></p>
+                           <p><h5> Fouls: {{x.stat.fouls}}</h5></p>
+                           <p><h5> Yellow card:{{x.cards.yellow}} </h5></p>
+                            <p><h5> Red card:{{x.cards.red}} </h5></p>
+
+
+                        </h3>
+                   
+                   
+                    
+                </div>
+                <hr>
+                
+              
+             
+                <!-- Pager -->
+                <ul class="pager">
+                    <li class="next">
+                        <a href="#/"> Home &rarr;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
