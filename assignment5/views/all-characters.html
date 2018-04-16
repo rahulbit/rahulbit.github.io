@@ -1,0 +1,25 @@
+
+<div class="row" style="text-align: center;">
+              <div class="col-md-4">
+                <div class="input-group btn-block" style="margin-left: 50%;  ">
+                  <a class="btn btn-lg btn-primary btn-block" ng-href="#/" >All Characters</a>
+                </div>
+              </div>
+            </div>
+
+
+
+              <div class= "row">
+<div class="col-md-4"  style="margin-left: 15%;">
+      <a class="btn btn-lg btn-danger btn-block" ng-click="mytoggle2=!mytoggle2"> Sort </a>
+    </div>
+    </div>
+
+<div class="box3 " ng-repeat="character in listAll.characters  | orderBy:'name'| orderBy: !mytoggle2 ? 'name': '-name' ">
+  <a ng-href="#/view-character/{{ character.url.replace('https://anapioficeandfire.com/api/characters/','') }}">
+    <div>
+      <p>{{$index +1}}</p>
+      <h3> {{character.name}}  <span ng-show = "{{character.name.length < 1 }}" >"No Name Available"</span> </h3>
+      
+    </div>
+</div>

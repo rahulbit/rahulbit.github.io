@@ -1,0 +1,198 @@
+body {
+    font-family: Lora, 'Times New Roman', serif;
+    font-size: 3vmin;
+    color: black;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+
+  }
+  .mainMagic{
+    padding-top: 3%;
+  }
+  .notFound {
+    padding: 8%;
+    text-align: center;
+}
+
+
+.magicBox a{
+    color: inherit; 
+    text-decoration: inherit; 
+}
+.magicBox{
+  margin: 3%;
+  padding: 2%;
+
+}
+
+
+.box1 h3{
+  text-align:center;
+	position:relative;
+	top:10px;
+}
+.box1 p{
+  text-align:center;
+	position:relative;
+	top:15px;
+}
+.box1 {
+	width:80%;
+	min-height:200px;
+	background:#708090;
+	margin:40px auto;
+  padding: 5px;
+  color: black;
+
+}
+.box1:hover, .box2:hover, .box3:hover {
+  background-color: white;
+}
+
+
+
+.box2 h3{
+  text-align:center;
+	position:relative;
+	top:20px;
+}
+.box2 p{
+  text-align:center;
+	position:relative;
+	top:30px;
+}
+.box2 {
+	width:80%;
+	min-height:200px;
+	background:#513315;
+	margin:40px auto;
+  padding: 5px;
+  color:black ;
+
+
+}
+
+.box3 h3{
+  text-align:center;
+	position:relative;
+	top:10px;
+}
+.box3 p{
+  text-align:center;
+	position:relative;
+	top:20px;
+}
+.box3 {
+	width:80%;
+	min-height:200px;
+	background:#2f4f4f;
+	margin:40px auto;
+  padding: 5px;
+}
+
+
+
+
+
+
+.appSection {
+   
+    background-color: white;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 2%;
+    box-shadow: 10px 10px 5px #888;
+  
+
+
+}
+.btn-block{
+  margin:  5px;
+}
+
+.footer {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    font: normal 18px sans-serif;
+    padding: 45px;
+    margin-top: 50px;
+   
+}
+
+.footer .footer-motto {
+    color: #8d9093;
+    font-size: 24px;
+    margin: 0;
+}
+
+.footer .footer-name {
+    color: cyan;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer .footer-links {
+    list-style: none;
+    font-weight: bold;
+    color: cyan;
+    padding: 35px 0 23px;
+    margin: 0;
+}
+
+.footer .footer-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*header*/
+#hero{
+  background:url("../img/home.jpg");
+  background-size:cover;
+  position:relative;
+  height:80vh;
+  width: 100%;
+  background-repeat:no-repeat;
+ background-position:center;
+}
+
+.header{
+  position:absolute;
+  top:50%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+    -webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%);
+
+}
+.h1style{
+  display: inline-block;
+  background-color: rgba(255,0,0,0.7);
+  font-size: 300%;
+  font-weight: bold;
+  font-family: Lora, monospace, serif;
+  color: white;
+  padding: 1%;
+
+}
+.p1style{
+  display: inline-block;
+  background-color: rgba(255,0,0,0.7);
+  font-size: 150%;
+  font-weight: bold;
+  font-family: Lora, monospace, serif;
+  color: white;
+  padding: 1%;
+}
+.h2style{
+  text-align: center;
+  font-weight: bold;
+  color: #ff004d;
+}
