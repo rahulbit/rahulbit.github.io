@@ -1,0 +1,26 @@
+ server {
+        listen       80;
+        server_name  localhost;
+
+       
+
+        location / {
+            root   "E:\edwisor\level5\assignment\assignment5";
+            index  index.html index.htm;
+        }
+
+      
+        location = /50x.html {
+            root   html;
+        }
+
+        location = /403.html {
+        root  html;
+}
+
+             location = /404.html {
+                     root html;
+               }
+
+
+     }
