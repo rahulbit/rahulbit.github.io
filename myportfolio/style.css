@@ -1,0 +1,535 @@
+:root {
+  font-size: 16px; }
+
+body {
+	margin:0;
+	padding:0;
+  background-color:   #E6E6FA;
+
+
+}
+
+
+
+.masthead{
+    display:flex;
+    flex-wrap: wrap;
+    background: url("image2.jpg");
+    height:100%;
+   background-size: 100% 100%;
+   background-position: center;
+}
+
+
+.header-container{
+  height:auto;
+  margin-top: 10vh;
+
+}
+.header-container h1{
+text-align: center;
+font-weight:300;
+font-family:"Gill Sans", sans-serif;
+font-size:5rem;
+padding-top:2rem;
+color:black;
+}
+
+.header-container h4{
+text-align: center;
+font-weight:200;
+font-family:"Gill Sans", sans-serif;
+font-size:1.35rem;
+padding-top:1rem;
+color:black;
+}
+
+
+
+.list-inline li{
+  color:black;
+}
+
+
+
+.navbar {
+    display: inline-block;
+    width: 100%;
+    background-color:black;
+    text-align: center;
+   
+}
+
+.navbar  ul{
+   text-align:right;
+      margin-left:35%;
+      border: 0px;
+
+}
+.navbar  a{
+  font-weight: 200;
+  font-size: 1.5rem;
+  font-family:"Gill Sans", sans-serif;
+
+}
+
+
+
+
+ 
+a{
+  color:white;
+}
+
+a:hover{
+  color: black;
+}
+
+
+.icons{
+    text-align: center;
+    font-size: 40px;
+    margin-top:90px;
+  }
+
+
+
+  .social {
+  display:inline-block;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+
+.social a{
+  width:30px;
+  text-decoration: none;
+  font-weight: 200;
+  font-size:2rem;
+  color:  #A52A2A;
+   margin: 5px 10px;
+   padding: 15px;
+}
+
+.social a:hover{
+  color:black;
+}
+
+
+
+img{
+   
+   padding:15%;
+     float:left;
+
+}
+
+
+
+.flex-container{
+  display:flex;
+  flex-wrap: wrap;
+  width:100%;
+  height:100%;
+  background-color:black;
+  
+
+}
+.container1{
+  height:100%;
+  width:25%;
+  margin-top: 5vh;
+}
+.container2{
+  height:100%;
+  width:75%;
+  margin:0;
+  padding:0  5vw  5vw;
+
+}
+
+
+  .abt1 h2{
+
+    font-family:"Gill Sans", sans-serif;
+    font-size:2.5rem;
+    font-weight: 300;
+    color:grey;
+    text-align:left;
+    margin-top: 8%;
+    
+
+  }
+
+   .abt1 h5 {
+    font-family:"Gill Sans", sans-serif;
+    font-size:1rem;
+    color:grey;
+    text-align:left;
+    padding: 1rem;
+    line-height:2rem;
+
+
+   }
+
+
+   .education{ 
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+   	width:100%;
+   	height:100%;
+    margin-bottom:3vh;
+    color:black;
+   }
+
+   .education h2{
+   	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+   	font-size: 2.5rem;
+   	text-align: center; 
+   	margin-top: 5vh;
+   	margin-bottom:5vh;
+   	border:5px solid black;
+    color:black;
+   }
+
+
+      .education   td{
+    font-size: 1rem;
+    font-family:"Gill Sans", sans-serif;
+  }
+
+    .education   th{
+    font-size: 1rem;
+    font-family:"Gill Sans", sans-serif;
+  }
+
+
+   .skills{ 
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    width:100%;
+    height:100%;
+    margin-bottom:6vh;
+    margin-top: 6vh;
+
+
+    color:black;
+
+   }
+
+   .skills h2{
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 2.5rem;
+    text-align: center; 
+    margin-top: 5vh;
+    margin-bottom:5vh;
+    color:black;
+    border:5px solid black ;
+   }
+
+   .skills h1{
+
+    font-size:6rem;
+    font-weight: 200;
+    margin-top:5vh;
+
+   }
+
+  .lng-icons{
+        display:flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        width:100%;
+        justify-content: space-between;
+        width:100%;
+
+  }
+
+
+   .table{
+   	margin-bottom:3vh;
+    color:black;
+   }
+ 
+
+
+  .projects{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    height:100%;
+  
+  }
+
+  .row-projects{
+    width:100%;
+    height:100%;
+    margin-bottom: 5vh;
+  }
+
+  .row1-projects{
+    width:100%;
+    height: 100%;
+    margin-bottom: 5vh;
+  }
+
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6vh;
+}
+
+.col-75 {
+
+     float: left;  
+    width: 75%;
+    margin-top: 6vh;
+}
+
+
+
+
+  .projects h2{
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 2.5rem;
+    text-align: center; 
+    margin-top: 5vh;
+    margin-bottom:5vh;
+    border:5px solid black;
+    color:black;
+    width:100%;
+  }
+
+  .row-projects h5 {
+     font-family:"Gill Sans", sans-serif;
+    font-size: 1.85rem;
+    text-align: center; 
+    color:black;
+   
+
+  
+  }
+
+  .row-projects h6 {
+     font-family:"Gill Sans", sans-serif;
+    font-size: 1.2rem;
+    text-align:left; 
+    color: black;
+    line-height: 1.5rem;
+    font-weight: 400;
+
+  }
+
+  .row1-projects h5{
+    font-family:"Gill Sans", sans-serif;
+    font-size: 1.85rem;
+    text-align: center; 
+    color:black;
+  }
+
+   .row1-projects h6 {
+     font-family:"Gill Sans", sans-serif;
+    font-size: 1.2rem;
+    text-align:left; 
+    color: black;
+    line-height: 1.5rem;
+    font-weight: 400;
+
+  }
+
+
+
+.containeritem1
+{
+  width:50%;
+  height:100%;
+}
+
+.containeritem2{
+  width:25%;
+  height:100%;
+  margin-top: 30vh;
+
+}
+
+.containeritem2 h3 {
+  font-family:"Gill Sans", sans-serif;
+  font-size: 2rem;
+
+}
+
+.containeritem2 h5{
+  font-family:"Gill Sans", sans-serif;
+  font-size: 1.3rem;
+
+}
+
+  
+
+
+ 
+.contact{
+  width:100%;
+  height:550px;
+  background-color: black; 
+
+}
+
+
+.glyphicon{
+     width:100px;
+     height:60px;
+     color: lightgrey;
+     margin-top: 5vh;
+     margin-left: 10vh;
+
+    
+   }
+
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    margin-left: 20%;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size:1.35em;
+}
+
+input[type=submit] {
+    background-color:grey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float:right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer{
+  width:100%;
+  height:100px;
+  background: black;
+
+
+}
+footer h5{
+
+  text-align: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-weight: 100;
+  font-size: 1.35rem;
+  padding-top: 10px;
+  color:grey;
+
+}
+
+.iconsfooter{
+    text-align: center;
+    font-size: 40px;
+    margin-top:10px;
+  }
+
+  .iconsfooter a {
+    color:grey;
+
+  }
+  .iconsfooter a:hover {
+    color:white;
+
+  }
+
+
+
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width:797px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+         font-size: 1.3rem;
+
+    }
+
+    
+
+
+    .container1{
+    width:200%;
+
+  }
+
+  .container2{
+    width:100%;
+    margin-top: 2vh;
+  }
+
+  .education   td{
+    font-size: 1.3rem;
+  }
+
+   .education   th{
+    font-size: 1.3rem;
+  }
+
+
+   .containeritem1
+{
+  width:100%;
+  height:100%;
+}
+
+ .containeritem1 label
+{
+  font-size: 1.5rem;
+}
+
+.containeritem2{
+  width:100%;
+  height:100%;
+  margin-top: 5vh;
+
+}
+
+.glyphicon{
+     width:20vw;
+     height:10vh;
+    margin-right: 5vh;
+    
+   }
+  
+}
+
+
+
+
+
+
+
+
+
+
