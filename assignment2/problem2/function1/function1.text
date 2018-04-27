@@ -1,0 +1,21 @@
+1. json  data is stored in js file as variable named episodes which contain 
+   array of objects.
+2   let getData = ( season ,number,allUsers) =>{
+
+      
+
+            for (x in allUsers)
+            {
+                if(allUsers[x].season == season  && allUsers[x].number==number)
+                {
+                  console.log(allUsers[x])
+                }
+            }
+
+    }
+
+    getData( 1, 3, episodes)
+
+   season number and episodes(js variable) are input for getData function
+   In for each loop if season and number matches with the season no 
+   and number present in the array then that episode is shown on console

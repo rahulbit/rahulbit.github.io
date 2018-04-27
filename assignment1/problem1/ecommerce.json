@@ -1,0 +1,53 @@
+ {
+ 	"user":
+[
+    {"username":"rahulranjan",
+      "firstName":"rahul",
+      "lastName":"ranjan",
+      "gender":"male",
+      "emailaddress":"acd@gmail.com",
+      "contact":"9877345210",
+      "order":{"orderid":"123","quatity":2,"orderdate":"23/2/2018","ordertotal":500,"paymentmode":"cash on delivery","ordercolor":"black","seller":"mufticloths","expected delivery":"28/2/2018"},
+      "deliveryaddress":"jaipur"
+
+    },
+
+     {"username":"rajkumar",
+      "firstName":"raj",
+      "lastName":"kumar",
+      "gender":"male",
+      "emailaddress":"raj@gmail.com",
+      "contact":"9877243210",
+      "order":{"orderid":"123A","quatity":1,"orderdate":"23/1/2018","ordertotal":5000,"paymentmode":"creditcard","ordercolor":"black","seller":"retailnet","expected delivery":"30/1/2018"},
+      "deliveryaddress":"patna"
+
+    }
+]
+}
+
+{ "items":
+ [
+    {  "electronics":[{"type":"mobiles","brand":["samsung","apple","nokia"]},
+                       {"type":"laptops","brand":["hp","toshiba"]},
+                       {"type":"earphones","brand":["sony"]}
+                      ]
+
+    },
+
+    {
+        "Menswear":[{"topwear":["shirts","tshirts","kurta" ,"jacket"]},
+                    {"bottomwear":["jeans","trousers","shorts"]},
+                    {"footwear":["sportsshoes","casualshoes","formalshoes"]}]
+    },
+
+    {
+      "womenswear":[{"Ethnicwear":["sarees", "salwars"]},
+                    {"footwear":["flat","heels"]},
+                    {"Grooming":["skincare","haircare","makeup"]}]
+    },
+
+    {
+      "books":["entranceexams", "academic","biography","comics"]
+    }
+
+ ]

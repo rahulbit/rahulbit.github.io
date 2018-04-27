@@ -1,0 +1,25 @@
+1. json  data is stored in js file as variable named episodes which contain 
+   array of objects.
+2    // function  to  get episode data by taking any no of id as input
+    let getData = (allUsers ,id1 , id2, id3) =>{
+
+      
+
+            for (x in allUsers)
+            {
+                if(allUsers[x].id == id1 ||  allUsers[x].id == id2||allUsers[x].id == id3)
+                {
+                  console.log(allUsers[x])
+                }
+            }
+
+    }
+
+
+     const id=[2913, 2914 , 2915];
+    getData(episodes,...id)
+
+   used SPREAD  
+   episodes(js variable) and array that contain id are input for getData function
+   In for each loop if Id  matches with the Id  
+   present in the array(episodes) then the  episode data  is shown on console
