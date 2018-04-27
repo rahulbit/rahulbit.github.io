@@ -175,7 +175,7 @@ img{
 
 
    .education{ 
-    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family:"Gill Sans", sans-serif;
    	width:100%;
    	height:100%;
     margin-bottom:3vh;
@@ -231,6 +231,19 @@ img{
     font-size:6rem;
     font-weight: 200;
     margin-top:5vh;
+
+   }
+
+
+   .Technicalskills h2{
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 2.5rem;
+    text-align: center; 
+    margin-top: 5vh;
+    margin-bottom:5vh;
+    color:black;
+    border:5px solid black ;
+    width:100%;
 
    }
 
@@ -467,15 +480,15 @@ footer h5{
 
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width:797px) {
+
+
+@media screen   and (max-width:500px) {
     .col-25, .col-75, input[type=submit] {
         width: 100%;
         margin-top: 0;
          font-size: 1.3rem;
 
     }
-
-    
 
 
     .container1{
@@ -488,13 +501,7 @@ footer h5{
     margin-top: 2vh;
   }
 
-  .education   td{
-    font-size: 1.3rem;
-  }
 
-   .education   th{
-    font-size: 1.3rem;
-  }
 
 
    .containeritem1
