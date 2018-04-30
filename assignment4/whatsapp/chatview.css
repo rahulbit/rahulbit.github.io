@@ -1,0 +1,25 @@
+body{
+	background: url("images/image7.jpg");
+	margin:0;
+	padding:0;
+}
+
+
+img{
+	max-width: 100%;
+	height:auto;
+}
+
+
+.footer {
+    position: fixed;
+   
+    bottom: 0;
+  
+
+    color: white;
+  
+}
+
+
+

@@ -1,0 +1,13 @@
+img{
+	max-width: 100%;
+	height: auto;
+
+}
+
+.border{
+	border-style: 5px solid black;
+	margin-top: 5vh;
+}
+ .st{
+ 	text-align: right;
+ }
