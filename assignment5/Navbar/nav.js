@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-$(window).resize(function () {
+$(window).resize(function (e) {
   // body...
-
+     e.preventDefault();
     var wsize = $(this).width();
 
     if(wsize<600)
