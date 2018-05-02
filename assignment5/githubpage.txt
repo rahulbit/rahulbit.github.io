@@ -1,3 +1,0 @@
-githupage link: rahulbit.github.io/assignment5/Navbar/
-                rahulbit.github.io/assignment5/collapse/
-                rahulbit.github.io/assignment5/modals/
