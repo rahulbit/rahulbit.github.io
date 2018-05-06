@@ -30,38 +30,38 @@ class facebook{
             this.nickname=nickname;
      }
 
-     getDateofbirth=()=>{
+     getDateofbirth=():string=>{
          return  this.Dob;
      }
-     getQuotes=()=>{
+     getQuotes=():string=>{
          return this.Quotes;
      }
-     getRelationshipStatus=()=>{
+     getRelationshipStatus=():string=>{
          return this.relationshipStatus;
      }
 
-     getGender=()=>{
+     getGender=():string=>{
          return this.Gender
      }
 
-     getEducationmaster=()=>{
+     getEducationmaster=():string=>{
         return this.educationbachelor;
         
      }
-     getHometown=()=>{
+     getHometown=():string=>{
          return this.hometown;
          
      }
 
-     getLivesIn=()=>{
+     getLivesIn=():string=>{
          return this.livesIn;
      }
 
-     getmobile=()=>{
+     getmobile=():number=>{
          return this.mobilePhone;
      }
 
-     getnickname=()=>{
+     getnickname=():string=>{
          return this.nickname;
      }
 }
