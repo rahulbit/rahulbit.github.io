@@ -70,24 +70,24 @@
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+        <h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p>Welcome to the Ecommerce Rest Api.</p>
 <p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-<p>This example API documentation page was created with <a href="http://github.com/mpociot/whiteboard" target="_blank" rel="noopener">Whiteboard</a>. Feel free to edit it and use it as a base for your own API’s documentation.</p>
+
 <h1 id="Authentication"><a href="#Authentication" class="headerlink" title="Authentication"></a>Authentication</h1><blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
-<pre><code class="highlight ruby"><span class="line"><span class="keyword">require</span> <span class="string">'kittn'</span></span><br><span class="line"></span><br><span class="line">api = Kittn::APIClient.authorize!(<span class="string">'meowmeowmeow'</span>)</span><br></code></pre>
-<pre><code class="highlight python"><span class="line"><span class="keyword">import</span> kittn</span><br><span class="line"></span><br><span class="line">api = kittn.authorize(<span class="string">'meowmeowmeow'</span>)</span><br></code></pre>
-<pre><code class="highlight bash"><span class="line"><span class="comment"># With shell, you can just pass the correct header with each request</span></span><br><span class="line">curl <span class="string">"api_endpoint_here"</span></span><br><span class="line">  -H <span class="string">"Authorization: meowmeowmeow"</span></span><br></code></pre>
+<pre><code class="highlight ruby"><span class="line"><span class="keyword">require</span> <span class="string">'kittn'</span></span><br><span class="line"></span><br><span class="line">(<span class="string">'Admin'</span>)</span><br></code></pre>
+<pre><code class="highlight python"><span class="line"><span class="keyword">import</span> kittn</span><br><span class="line"></span><br><span class="line"><span class="string"></span>)</span><br></code></pre>
+<pre><code class="highlight bash"><span class="line"><span class="comment"></span></span><br><span class="line">curl <span class="string"></span></span><br><span class="line">  -H <span class="string">"Authorization Key : Admn"</span></span><br></code></pre>
 <blockquote>
 <p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
 </blockquote>
 <p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers" target="_blank" rel="noopener">developer portal</a>.</p>
 <p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-<p><code>Authorization: meowmeowmeow</code></p>
-<aside class="notice"><br>You must replace <code>meowmeowmeow</code> with your personal API key.<br></aside>
+<p><code>Authorization: Admin</code></p>
+<aside class="notice"><br>You must use the authToken  Admin as url  query parameter<code></code> .<br></aside>
 
-<h1 id="Kittens"><a href="#Kittens" class="headerlink" title="Kittens"></a>Kittens</h1><h2 id="Get-All-Kittens"><a href="#Get-All-Kittens" class="headerlink" title="Get All Kittens"></a>Get All Kittens</h2><pre><code class="highlight ruby"><span class="line"><span class="keyword">require</span> <span class="string">'kittn'</span></span><br><span class="line"></span><br><span class="line">api = Kittn::APIClient.authorize!(<span class="string">'meowmeowmeow'</span>)</span><br><span class="line">api.kittens.get</span><br></code></pre>
+<h1 id="Kittens"><a href="#Kittens" class="headerlink" title="Kittens"></a></h1><h2 id="Get-All-Kittens"><a href="#Get-All-Kittens" class="headerlink" title="Get All Kittens"></a>Get All Products</h2><pre><code class="highlight ruby"><span class="line"><span class="keyword">require</span> <span class="string"></span></span><br><span class="line"></span><br><span class="line"> <span class="string">'</span>)</span><br><span class="line"></span><br></code></pre>
 <pre><code class="highlight python"><span class="line"><span class="keyword">import</span> kittn</span><br><span class="line"></span><br><span class="line">api = kittn.authorize(<span class="string">'meowmeowmeow'</span>)</span><br><span class="line">api.kittens.get()</span><br></code></pre>
 <pre><code class="highlight bash"><span class="line">curl <span class="string">"http://example.com/api/kittens"</span></span><br><span class="line">  -H <span class="string">"Authorization: meowmeowmeow"</span></span><br></code></pre>
 <blockquote>
