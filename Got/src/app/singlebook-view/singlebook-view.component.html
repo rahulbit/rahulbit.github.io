@@ -1,0 +1,41 @@
+<div class="container">
+  <div clas="row " *ngIf="singleViewBook">
+    <div class="col-md-12 m-5  p-5" style="text-align: center">
+
+      <div class="card" style="background-color:blue;color: beige  ">
+        <img class="card-img-top" src="assets/Book.jpg" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-title" style="font-size:20px">Title:{{ singleViewBook.name}}</p>
+
+          <p class="card-text" style="font-size:15px">Released on: {{singleViewBook.released|date}} </p>
+
+          <p class="card-text" style="font-size:15px">Isbn no:{{singleViewBook.isbn}} </p>
+
+          <p class="card-text" style="font-size:15px">Country: {{singleViewBook.country}} </p>
+
+          <p class="card-text" style="font-size:15px">Publisher:{{singleViewBook.publisher}}
+          </p>
+
+          <p class="card-text" style="font-size:15px" *ngIf="singleViewBook.authors.length>0">Authors:
+            <span *ngFor="let author of singleViewBook.authors , let first = first,  let last = last"> {{author}}{{last?'':','}}</span>
+          </p>
+
+          <p class="card-text" style="font-size:15px">MediaType: {{singleViewBook.mediaType}} </p>
+
+          <p class="card-text" style="font-size:15px" *ngIf="singleViewBook.povCharacters.length>0">povCharacters:
+            <br>
+            <br>
+            <span *ngFor="let pov of singleViewBook.povCharacters" style="font-size:15px; color:beige">{{pov}}
+              <br>
+              <br>
+            </span>
+          </p>
+
+
+
+          <a class="btn btn-primary" (click)= goBack()>Go Back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

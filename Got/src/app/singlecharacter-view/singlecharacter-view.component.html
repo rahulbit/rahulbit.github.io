@@ -1,0 +1,70 @@
+<div class="container">
+
+  <div clas="row" *ngIf="singleViewCharacter">
+    <div class="col-md-12  m-5 p-5">
+
+      <div class="card" style="background-color:brown;color: beige  ">
+        <img class="card-img-top" src="assets/character.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Name:{{singleViewCharacter.name}}</h5>
+
+          <p class="card-text">Gender:
+            <span *ngIf="singleViewCharacter.gender.length>0"> {{singleViewCharacter.gender}}</span>
+            <span *ngIf="singleViewCharacter.gender.length<1">not Available</span>
+          </p>
+
+          <p class="card-text">Culture:
+            <span *ngIf="singleViewCharacter.culture.length>0">{{singleViewCharacter.culture}}</span>
+            <span *ngIf="singleViewCharacter.culture.length<1">Not Available</span>
+
+          </p>
+          <p class="card-text">Born:
+            <span *ngIf="singleViewCharacter.born.length>0">{{singleViewCharacter.born}}</span>
+            <span *ngIf="singleViewCharacter.born.length<1">Not Available</span>
+          </p>
+          <p class="card-text">Died:
+            <span *ngIf="singleViewCharacter.died.length>0">
+              {{singleViewCharacter.died}}</span>
+            <span *ngIf="singleViewCharacter.died.length <1">Not Available</span>
+          </p>
+          <p class="card-text">Father:
+            <br>
+            <span *ngIf="singleViewCharacter.father.length>0">{{singleViewCharacter.father}}</span>
+            <span *ngIf="singleViewCharacter.father.length<1">Not Available</span>
+          </p>
+          <p class="card-text">Mother:
+            <br>
+            <span *ngIf="singleViewCharacter.mother.length>0">
+              <a>{{singleViewCharacter.mother}}</a>
+            </span>
+            <span *ngIf="singleViewCharacter.mother.length<1">Not Available</span>
+          </p>
+          <p class="card-text">Titles:
+            <br>
+            <span *ngIf="singleViewCharacter.titles.length>0">{{singleViewCharacter.titles}}
+              <br>
+            </span>
+            <span *ngIf="singleViewCharacter.titles.length<1">Not Available</span>
+          </p>
+          <p class="card-text">Spouse:
+            <br>
+            <span *ngIf="singleViewCharacter.spouse.length>0">{{singleViewCharacter.spouse}}</span>
+            <span *ngIf="singleViewCharacter.spouse.length<1">Not Available</span>
+          </p>
+          <p class="card-text">Aliases:
+            <br>
+            <span *ngIf="singleViewCharacter.aliases.length>0">{{singleViewCharacter.aliases}}</span>
+            <span *ngIf="singleViewCharacter.aliases.length<1">Not Available</span>
+          </p>
+          <p class="card-text">Tv-Series:
+            <br>
+            <span *ngIf="singleViewCharacter.tvSeries.length>0">{{singleViewCharacter.tvSeries}}</span>
+            <span *ngIf="singleViewCharacter.tvSeries.length<1">Not Available</span>
+          </p>
+
+          <a class="btn btn-primary" (click)= goBack()>Go back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

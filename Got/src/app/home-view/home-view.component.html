@@ -1,0 +1,48 @@
+<div class="container" style="text-align: center">
+  <div class="row ">
+    <div clas="row" *ngIf="allbooks.length>0">
+      <div class="col-md-4 m-4 p-3 " *ngFor="let books of allbooks|orderBy:released">
+
+        <div class="card" style="width: 18rem;background-color:blue;color: beige  ">
+          <img class="card-img-top" src="assets/Book.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Title:{{books.name}}</h5>
+            <p class="card-text">Released on {{books.released|date}}</p>
+            <a [routerLink]="['/book', books.url.replace('https://anapioficeandfire.com/api/books/' ,'')]" class="btn btn-primary">More info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div clas="row" *ngIf="allhouse.length>0">
+      <div class="col-md-4  m-4 p-3" *ngFor="let houses of allhouse|orderBy:name">
+
+        <div class="card" style="width: 18rem;background-color:blueviolet;color: beige  ">
+          <img class="card-img-top" src="assets/house1.jpg" alt="Card image cap">
+          <div class="card-body">
+
+            <h5 class="card-title">{{houses.name}}</h5>
+            <p class="card-text">
+              <span *ngIf="houses.coatOfArms.length>0"> {{houses.coatOfArms}}</span>
+              <span *ngIf="houses.coatOfArms.length<1">not available</span>
+            </p>
+            <a [routerLink]="['/house', houses.url.replace('https://anapioficeandfire.com/api/houses/','')]" class="btn btn-primary">More Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div clas="row" *ngIf="allcharacter.length>0">
+      <div class="col-md-4  m-4 p-3" *ngFor="let characters of allcharacter|orderBy:name">
+
+        <div class="card" style="width: 18rem;background-color:brown;color: beige  ">
+          <img class="card-img-top" src="assets/character.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Name:{{characters.name}}</h5>
+            <p class="card-text"></p>
+            <a [routerLink]="['/character', characters.url.replace('https://anapioficeandfire.com/api/characters/' ,'')]" class="btn btn-primary">More Info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,90 @@
+<div class="container">
+
+  <div clas="row" *ngIf="singleHouseView">
+    <div class="col-md-12 m-5 p-5 ">
+
+      <div class="card  text-center" style="background-color:brown;color: beige  ">
+        <img class="card-img-top" src="assets/house1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Name:{{singleHouseView.name}}</h5>
+
+          <p class="card-text">region:
+            <span *ngIf="singleHouseView.region.length>0"> {{singleHouseView.region}}</span>
+            <span *ngIf="singleHouseView.region.length<1">not Available</span>
+          </p>
+
+          <p class="card-text">coatOfArms:
+            <span *ngIf="singleHouseView.coatOfArms.length>0">{{singleHouseView.coatOfArms}}</span>
+            <span *ngIf="singleHouseView.coatOfArms.length<1">Not Available</span>
+
+          </p>
+          <p class="card-text">Words:
+            <span *ngIf="singleHouseView.words.length>0">{{singleHouseView.words}}</span>
+            <span *ngIf="singleHouseView.words.length<1">Not Available</span>
+          </p>
+          <p class="card-text">Titles:
+            <span *ngIf="singleHouseView.titles.length>0   ">
+              {{singleHouseView.titles}}</span>
+            <span *ngIf="singleHouseView.titles.length <1">Not Available</span>
+          </p>
+
+          <p class="card-text">Seats:
+            <br>
+            <span *ngIf="singleHouseView.seats.length>0">{{singleHouseView.seats}}</span>
+            <span *ngIf="singleHouseView.seats.length<1">Not Available</span>
+          </p>
+
+          <p class="card-text">CurrentLord:
+            <br>
+            <span *ngIf="singleHouseView.currentLord.length>0">{{singleHouseView.currentLord}}</span>
+            <span *ngIf="singleHouseView.currentLord.length<1">Not Available</span>
+          </p>
+          <p class="card-text">Heir:
+            <br>
+            <span *ngIf="singleHouseView.heir.length>0">{{singleHouseView.heir}}</span>
+            <span *ngIf="singleHouseView.heir.length<1">Not Available</span>
+          </p>
+          <p class="card-text">overlord:
+            <br>
+            <span *ngIf="singleHouseView.overlord.length>0">{{singleHouseView.overlord}}</span>
+            <span *ngIf="singleHouseView.overlord.length<1">Not Available</span>
+          </p>
+          <p class="card-text">founded:
+            <br>
+            <span *ngIf="singleHouseView.founded.length>0">{{singleHouseView.founded}}</span>
+            <span *ngIf="singleHouseView.founded.length<1">Not Available</span>
+          </p>
+
+          <p class="card-text">founder:
+            <br>
+            <span *ngIf="singleHouseView.founder.length>0">{{singleHouseView.founder}}</span>
+            <span *ngIf="singleHouseView.founder.length<1">Not Available</span>
+          </p>
+
+          <p class="card-text">diedOut:
+            <br>
+            <span *ngIf="singleHouseView.diedOut.length>0">{{singleHouseView.diedOut}}</span>
+            <span *ngIf="singleHouseView.diedOut.length<1">Not Available</span>
+          </p>
+
+          <p class="card-text">ancestralWeapons:
+            <br>
+            <span *ngIf="singleHouseView.ancestralWeapons.length>0">{{singleHouseView.ancestralWeapons}}</span>
+            <span *ngIf="singleHouseView.ancestralWeapons.length<1">Not Available</span>
+          </p>
+
+          <p class="card-text" *ngIf="singleHouseView.swornMembers.length>0">swornMembers:
+            <br>
+            <br>
+            <span *ngFor="let Member of singleHouseView.swornMembers">{{Member}}
+              <br> </span>
+            <span *ngIf="singleHouseView.swornMembers.length<1">Not Available</span>
+          </p>
+
+
+          <a class="btn btn-primary" (click)= goBack()>Go back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
